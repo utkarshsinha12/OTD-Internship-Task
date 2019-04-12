@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Display</h2>
+
+
+{% for item_1 in bus_array[0] %}
+
+<h3>Bus Number:</h3>
+{{item_1}}
+
+
+	<h4>All Routes:</h4>
+	{% for item_2 in bus_array[1][0] %}
+
+	
+	<ul>
+		<li>{{item_2}}</li>
+	</ul>
+
+
+
+
+
+	{% endfor %}
+
+
+{% endfor %}
+
+
+
+</body>
+</html>
