@@ -5,8 +5,6 @@ def bus_algo(x, y):
 	routes = pd.read_csv("routes.csv")
 	routes = routes[['route_long_name', 'route_id']].values
 	stops = pd.read_csv("stops.csv")
-	x1 = x
-	y1 = y
 	start_point = stops[stops.stop_name == x]
 	end_point = stops[stops.stop_name == y]
 	stops = stops[['stop_id', 'stop_name']].values
@@ -52,7 +50,7 @@ def bus_algo(x, y):
 								break
 		all_stops.append(stops_1)
 
-	return [x1, y1, bus, all_stops]
+	return [bus, all_stops]
 
 
 
