@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 from werkzeug.serving import run_simple
+import numpy as np
 app = Flask(__name__)
 
 
