@@ -31,4 +31,4 @@ def submit_bus_data():
 
 if __name__ == '__main__':
     app.secret_key = 'mysecret'
-    app.run('localhost', 5001, debug=True)
+    app.run('localhost', 5002, debug=True)
